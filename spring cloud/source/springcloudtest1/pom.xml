@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>spring-cloud-test1</groupId>
+    <artifactId>spring-cloud-test1</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>duan-eureka-server</module>
+        <module>duan-eureka-client</module>
+        <module>duan-ribbon-client</module>
+        <module>duan-ribbon-clientb1</module>
+        <module>duan-ribbon-clientb2</module>
+        <module>duan-hystrix-client</module>
+        <module>duan-feign-client</module>
+        <module>duan-feign-server</module>
+        <module>duan-zuul-client</module>
+    </modules>
+
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+            <version>2.1.9.RELEASE</version>
+        </dependency>
+    </dependencies>
+
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-dependencies -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>Greenwich.SR3</version>
+                <type>pom</type>
+                <scope>runtime</scope>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+
+
+
+</project>
